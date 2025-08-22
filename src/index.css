@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Raleway",sans-serif;
+  color: #ffffff
+}
+.nav-side{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  opacity: 0;
+}
+.nav-side > div{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+.nav-side nav{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-side a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;  
+  transition: all 0.3s;
+  opacity: 0;
+
+}
+.nav-side :is(a:hover,a:active){
+  color: #0095FA;
+}
+header{
+  background-color: #0A2540;
+  height: 100vh;
+  padding: 0 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+
+}
+header::before{
+  content: "";
+  background-color: #0095FA;
+  position: absolute;
+  width: 45vw;
+  height: 100%;
+  z-index: -1;
+  transform: skewX(30deg);
+  filter: blur(250px);
+}
+.headings{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  opacity: 0;
+
+}
+.headings > div:last-child{
+  width: 63vh;
+  height: 60vh;
+  background-image: linear-gradient(#DEF2FF,#0095FA);
+  overflow: hidden;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  border-radius: 0.5rem;
+}
+.headings h1{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.headings span{
+  color: #0095FA;
+}
+.headings p{
+  font-size: 0.8rem;
+}
+.headings > div:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.brand{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.brand img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
