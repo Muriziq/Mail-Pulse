@@ -73,7 +73,7 @@ header::before{
   opacity: 0;
 
 }
-.headings > div:last-child{
+.headings > div:last-child , .third > div:first-child{
   width: 63vh;
   height: 60vh;
   background-image: linear-gradient(#DEF2FF,#0095FA);
@@ -108,4 +108,28 @@ header::before{
   height: 100%;
   width: auto;
   object-fit: cover;
+}
+
+.third{
+  background-color: #0A2540;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.third p{
+  font-size: 0.95rem;
+}
+.third section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.third h1{
+  font-size: 2rem;
+}
+.third h2{
+  font-size: 1.1rem;
 }
